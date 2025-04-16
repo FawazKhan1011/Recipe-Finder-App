@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types'; // ✅ Step 1: Import PropTypes
+import PropTypes from 'prop-types';
 
 const MealBox = ({ meal }) => {
   return (
@@ -13,7 +13,6 @@ const MealBox = ({ meal }) => {
   );
 };
 
-// ✅ Step 2: Add prop-types validation
 MealBox.propTypes = {
   meal: PropTypes.shape({
     strMealThumb: PropTypes.string.isRequired,

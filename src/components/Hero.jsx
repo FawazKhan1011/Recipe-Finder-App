@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 const Hero = () => {
     const [text,setText] = useState('')

@@ -1,46 +1,102 @@
-#single-meal{
-    min-height: 100vh;
-   
-    
-}
-.video-container{
-    width: 100%;
-    
-}
 
-.info{
-    margin-top: 20px;
+#single-meal {
+    min-height: 100vh;
+    padding: 30px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+
+  #single-meal h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #222;
+    font-weight: 700;
+  }
+  
+
+  .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+
+  .video-container {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-container iframe,
+  .video-container video,
+  .video-container > div {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 12px;
+  }
+  
+
+  .info {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
-}
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Section headers */
+  #single-meal h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #444;
+  }
+  
 
-#single-meal h3{
-    margin: 20px 0px;
-    font-size: 23px;
-}
-
-.ingredients ul{
-    
+  .ingredients ul {
     list-style: none;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-.ingredients li{
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-@media (min-width:768px) {
-    .container{
-        width: 90%;
-        margin: auto;
+    gap: 15px;
+  }
+  
+  .ingredients li {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Responsive tweak */
+  @media (max-width: 768px) {
+    #single-meal h2 {
+      font-size: 26px;
     }
-}
+  
+    .info {
+      font-size: 16px;
+    }
+  
+    .ingredients li {
+      font-size: 15px;
+    }
+  
+    #single-meal h3 {
+      font-size: 20px;
+    }
+  }
+  

@@ -85,6 +85,7 @@ footer{
     background-color: #F28C28;
 }
 footer p{
+    color: white;
     font-size: 20px;
     padding: 10px;
     text-align: center;

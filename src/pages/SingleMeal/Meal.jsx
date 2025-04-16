@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import './Meal.css';
@@ -32,13 +32,24 @@ const Meal = () => {
 
   return (
     <section id='single-meal'>
-      {meal.strMeal ? ( // Check if meal data exists
+      {meal.strMeal ? (
         <>
           <h2>{meal.strMeal}</h2>
 
           <div className="container">
             <div className="video-container">
-              <ReactPlayer url={meal.strYoutube} width='100%' />
+              <ReactPlayer
+                url={meal.strYoutube}
+                width="100%"
+                height="100%"
+                controls={true}
+                playing={false}
+                config={{
+                  youtube: {
+                    playerVars: { showinfo: 1, modestbranding: 1 }
+                  }
+                }}
+              />
             </div>
             <div className='info'>
               <p><strong>Category:</strong> {meal.strCategory}</p>

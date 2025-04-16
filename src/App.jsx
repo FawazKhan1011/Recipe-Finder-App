@@ -1,4 +1,3 @@
-import React from 'react'
 import "./App.css"
 import Menu from './pages/Menu/Menu'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
