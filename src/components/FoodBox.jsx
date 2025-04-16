@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 const FoodBox = ({ category }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -28,3 +28,12 @@ const FoodBox = ({ category }) => {
 };
 
 export default FoodBox;
+
+import PropTypes from 'prop-types';
+
+FoodBox.propTypes = {
+  category: PropTypes.shape({
+    strCategory: PropTypes.string.isRequired,
+    strCategoryThumb: PropTypes.string.isRequired
+  }).isRequired
+};

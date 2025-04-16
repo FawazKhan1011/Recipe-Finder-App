@@ -11,7 +11,7 @@
 
 .food-box {
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid black;
     width: 18rem;
     border-radius: 5px;
     text-align: center;
